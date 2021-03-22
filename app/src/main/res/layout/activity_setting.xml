@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.SettingActivity">
+
+    <View
+        android:id="@+id/v_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height"
+        android:background="@drawable/toolbar_cloud_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:src="@drawable/ic_back_arrow"
+        app:layout_constraintLeft_toLeftOf="@id/v_bg"
+        app:layout_constraintTop_toTopOf="@id/v_bg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/joti_one"
+        android:text="@string/activity_setting"
+        android:textColor="@color/blue"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@id/img_back"
+        app:layout_constraintTop_toTopOf="@id/v_bg" />
+
+    <ImageView
+        android:id="@+id/jpeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_jpeg"
+        app:layout_constraintEnd_toEndOf="@id/hd"
+        app:layout_constraintStart_toStartOf="@id/hd"
+        app:layout_constraintTop_toBottomOf="@id/v_bg" />
+
+    <TextView
+        android:id="@+id/format"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/format"
+        android:textColor="@color/black"
+        android:textSize="@dimen/app_name_text_size"
+        app:layout_constraintBottom_toBottomOf="@id/jpeg"
+        app:layout_constraintLeft_toRightOf="@id/jpeg"
+        app:layout_constraintStart_toStartOf="@id/quality"
+        app:layout_constraintTop_toTopOf="@id/jpeg" />
+
+    <TextView
+        android:id="@+id/txt_format"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="JPEG"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/app_name_text_size"
+        app:layout_constraintBottom_toBottomOf="@id/format"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/format" />
+
+    <ImageView
+        android:id="@+id/hd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_hd"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jpeg" />
+
+    <TextView
+        android:id="@+id/quality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/quality"
+        android:textColor="@color/black"
+        android:textSize="@dimen/app_name_text_size"
+        app:layout_constraintBottom_toBottomOf="@id/hd"
+        app:layout_constraintLeft_toRightOf="@id/hd"
+        app:layout_constraintTop_toTopOf="@id/hd" />
+
+    <TextView
+        android:id="@+id/txt_quality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="High"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/app_name_text_size"
+        app:layout_constraintBottom_toBottomOf="@id/quality"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/quality" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

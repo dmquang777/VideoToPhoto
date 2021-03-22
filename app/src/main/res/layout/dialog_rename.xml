@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/v_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height"
+        android:background="@drawable/toolbar_cloud_bg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/joti_one"
+        android:text="@string/rename"
+        android:textColor="@color/blue"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/edt_rename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v_bg"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txt_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_rename"
+        android:layout_alignEnd="@id/edt_rename"
+        android:layout_marginEnd="30dp"
+        android:text="@string/ok"
+        android:textColor="@color/blue"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txt_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_rename"
+        android:layout_marginEnd="50dp"
+        android:layout_toStartOf="@id/txt_ok"
+        android:text="@string/cancel"
+        android:textColor="@color/blue"
+        android:textSize="25sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@id/txt_ok" />
+
+</RelativeLayout>
