@@ -152,8 +152,8 @@ public class PlayerActivity extends AppCompatActivity implements Player.EventLis
                 v.setAnimation(animPress);
                 overridePendingTransition(R.anim.anim_intent_in, R.anim.anim_intent_out);
             });
-//            saveImage(captureBitmap, "img" + System.currentTimeMillis(),
-//                    format, quality);
+            saveImage(captureBitmap, "img" + System.currentTimeMillis(),
+                    format, quality);
         }
     }
 
